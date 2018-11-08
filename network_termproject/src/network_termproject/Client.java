@@ -24,8 +24,8 @@ public class Client {
     private void run() throws IOException {
 
         // Make connection and initialize streams
-        String serverAddress = ""; //server주소넣는부분
-        Socket socket = new Socket(serverAddress, 9001);//소켓생성
+        String serverAddress = ""; //server ip address
+        Socket socket = new Socket(serverAddress, 9001);//make socket
         int check=0;
         in = new BufferedReader(new InputStreamReader(
             socket.getInputStream()));
@@ -34,13 +34,13 @@ public class Client {
         while (true) {
         	if(check==0)
         	{
-        		//login 창  구현
+        		//login window
         		check=1;
         	}
         	else 
         	{
-               String line = in.readLine();//서버로부터 입력받음
-               if (line.startsWith("msgloginok")) {//statsWith=문자열 앞이 일치하면 true 아니면 false
+               String line = in.readLine();//receive from server
+               if (line.startsWith("msgloginok")) {//startWith *
             	   
             	   
                }             
@@ -52,8 +52,9 @@ public class Client {
 
     public static void main(String[] args) throws Exception {
         Client client = new Client();
-        client.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//frame이 닫힐때 프로그램도 종료되게 설정
-        client.frame.setVisible(true);//보이게설정
+        client.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //when frame is close, window is close
+        client.frame.setVisible(true);//it set visible
         client.run();
     }
 }

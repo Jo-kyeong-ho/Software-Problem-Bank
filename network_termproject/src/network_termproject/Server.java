@@ -13,20 +13,20 @@ import java.util.*;
  
 public class Server {
 
-    private static final int PORT = 9001;//port number 설정
+    private static final int PORT = 9001;//port number 
 
     private static HashSet<PrintWriter> writers = new HashSet<PrintWriter>();
     //writer hash로관리
     
     public static void main(String[] args) throws Exception {
         System.out.println("The chat server is running.");
-        ServerSocket listener = new ServerSocket(PORT);//소켓생성
+        ServerSocket listener = new ServerSocket(PORT);//make socket
         try {
             while (true) {
-                new Handler(listener.accept()).start();//accept에서 연결대기 후 연결시 thread시작
+                new Handler(listener.accept()).start();//accept-wait connection and start thread
             }
         } finally {
-            listener.close();//소켓제거
+            listener.close();//delete socket
         }
     }
 
@@ -43,7 +43,7 @@ public class Server {
             this.socket = socket;
         }
 
-        public void run() {//thread 실행코드
+        public void run() {//thread excution code
             try {
 
                 in = new BufferedReader(new InputStreamReader(
@@ -51,15 +51,15 @@ public class Server {
                 out = new PrintWriter(socket.getOutputStream(), true);
                 writers.add(out);
                 while (true) {
-                	//login부분
-                	break;//지우고쓰면됨 unreachable오류 막으려고넣음
+                	//login
+                	break;//when you write code, delete it
                 }
                 while (true) {
                 	check=0;
-                    String input = in.readLine();//client로 부터 메세지수신            	
+                    String input = in.readLine();//receive message from client            	
                     if(input.startsWith("msg"))
                     {
-                    	//이런식구현
+                    	//go
                     }
                 }
             } catch (IOException e) {
@@ -69,7 +69,7 @@ public class Server {
                     writers.remove(out);
                 }
                 try {
-                    socket.close();//소켓종료
+                    socket.close();//finish socket
                 } catch (IOException e) {
                 }
             }
