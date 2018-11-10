@@ -1,4 +1,4 @@
-package network_termproject;
+package network_termpro;
 
 import java.net.ServerSocket;
 import java.net.Socket;

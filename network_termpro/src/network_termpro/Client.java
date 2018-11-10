@@ -1,4 +1,4 @@
-package network_termproject;
+package network_termpro;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
