@@ -52,9 +52,9 @@ public class Client {
 
     public static void main(String[] args) throws Exception {
         Client client = new Client();
-        client.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //client.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         //when frame is close, window is close
-        client.frame.setVisible(true);//it set visible
+        //client.frame.setVisible(true);//it set visible
         client.run();
     }
 }
