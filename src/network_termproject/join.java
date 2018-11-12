@@ -29,6 +29,7 @@ public class join {
 
     public String toString() {
     	System.out.println("test");
+    	System.out.println("test2");
         return "MemberDTO [id=" + id + ", pwd=" + pwd+"]" ;
         
     }
