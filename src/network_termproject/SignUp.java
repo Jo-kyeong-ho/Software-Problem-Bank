@@ -65,21 +65,21 @@ public class SignUp extends JFrame {
       panel.add(ID);
       
       JLabel Password = new JLabel("Password");
-      Password.setBounds(112, 125, 57, 15);
+      Password.setBounds(112, 125, 77, 15);
       panel.add(Password);
       
       textField = new JTextField();
-      textField.setBounds(181, 63, 116, 21);
+      textField.setBounds(201, 63, 116, 21);
       panel.add(textField);
       textField.setColumns(10);
       
       textField_1 = new JTextField();
       textField_1.setColumns(10);
-      textField_1.setBounds(181, 122, 116, 21);
+      textField_1.setBounds(201, 122, 116, 21);
       panel.add(textField_1);
       
       passwordField = new JPasswordField();
-      passwordField.setBounds(181, 91, 116, 21);
+      passwordField.setBounds(201, 91, 116, 21);
       panel.add(passwordField);
       
       JButton confirm = new JButton("confirm");   //확인 버튼
@@ -88,7 +88,18 @@ public class SignUp extends JFrame {
       
       confirm.addActionListener(new ActionListener() {  //확인 버튼 누르면 성공 팝업창
          public void actionPerformed(ActionEvent e) {
+        	 /*
+        	  * 이 부분에 받은 아이디로 이미 있는아이디 인지 유무 판단
+        	  */
+         String id=textField_1.getText();
+         /*
+          * if(id=="이미있는아이디")
+          * JOptionPane.showMessageDialog(null,"ID alredy exists","Fail", 1);
+          */
          JOptionPane.showMessageDialog(null,"회원가입 성공","Success", 1);
+         new Mainframe().setVisible(true);
+         setVisible(false);
+         
          }
       });   
    
@@ -97,6 +108,7 @@ public class SignUp extends JFrame {
       cancel.addActionListener(new ActionListener() {      //취소 버튼 누르면 메인 화면으로 
          public void actionPerformed(ActionEvent e) { 
             new Mainframe().setVisible(true);
+            setVisible(false);
          }
       });
       
