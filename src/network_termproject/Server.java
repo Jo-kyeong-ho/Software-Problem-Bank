@@ -26,7 +26,7 @@ public class Server {
         ServerSocket listener = new ServerSocket(PORT);//make socket
       try {//prepare JDBC use
          Class.forName("com.mysql.jdbc.Driver"); // MySQL driver load
-         conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydb", "root","1234"); // JDBC 연결
+         conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/network_db", "root","12345"); // JDBC 연결
          System.out.println("DB 연결 완료");
          stmt = conn.createStatement(); 
       } catch (ClassNotFoundException e) {
@@ -139,7 +139,7 @@ public class Server {
                         st1=token.nextToken();
                         st1=token.nextToken();//get ID
                         st1="'"+st1+"'"; 
-                    	query="select id, name, totalComment, selectComment, point, rank from user where id="+st1;
+                    	query="select id, name, reply, reply_choice, point, rank from user,user_info where user.pri=user_info.id and id="+st1;
                     	rs=stmt.executeQuery(query);
                     	st2=rs.getString("id");
                         st2=st2+"/"+rs.getString("name");
@@ -149,7 +149,7 @@ public class Server {
                         st2=st2+"/"+rs.getString("rank");
                         out.println(st2);
 
-                        query ="select introduce from user where id="+st1;
+                        query ="select introduce from user_info, user where user.pri=user_info.id and id="+st1;
                         
                         introduce_txt=rs.getString("introduce");
                         inputStream = new BufferedReader(new FileReader(introduce_txt));
