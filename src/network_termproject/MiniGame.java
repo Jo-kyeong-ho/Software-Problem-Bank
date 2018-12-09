@@ -148,7 +148,7 @@ public class MiniGame extends JFrame {
 		JEditorPane editorPane_1 = new JEditorPane();
 		editorPane_1.setBounds(95, 446, 278, 99);
 		contentPane.add(editorPane_1);
-		editorPane_1.setText("Problem- text");
+		editorPane_1.setText("enter answer");
 		
 		JButton btnSubmit = new JButton("Submit");
 		btnSubmit.setBounds(510, 477, 202, 68);
