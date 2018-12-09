@@ -190,27 +190,27 @@ public class ProblemResult extends JFrame {
 		panel_2.add(textPane);
 		
 		JTextPane textPane_1 = new JTextPane();
-		textPane_1.setText("evaluation : "+evaluation[0]);
+		textPane_1.setText(largesubject[0]);
 		textPane_1.setBounds(212, 0, 107, 40);
 		panel_2.add(textPane_1);
 		
 		JTextPane textPane_2 = new JTextPane();
-		textPane_2.setText(largesubject[0]);
+		textPane_2.setText(smallsubject[0]);
 		textPane_2.setBounds(322, 0, 99, 40);
 		panel_2.add(textPane_2);
 		
 		JTextPane textPane_3 = new JTextPane();
-		textPane_3.setText(smallsubject[0]);
+		textPane_3.setText(form[0]);
 		textPane_3.setBounds(425, 0, 70, 40);
 		panel_2.add(textPane_3);
 		
 		JTextPane textPane_4 = new JTextPane();
-		textPane_4.setText(form[0]);
+		textPane_4.setText(level[0]);
 		textPane_4.setBounds(499, 0, 59, 40);
 		panel_2.add(textPane_4);
 		
 		JTextPane textPane_5 = new JTextPane();
-		textPane_5.setText("level :"+level[0]);
+		textPane_5.setText(evaluation[0]);
 		textPane_5.setBounds(145, 0, 66, 40);
 		panel_2.add(textPane_5);
 		}
@@ -237,27 +237,27 @@ public class ProblemResult extends JFrame {
 		panel_3.add(textPane_6);
 		
 		JTextPane textPane_7 = new JTextPane();
-		textPane_7.setText("evaluation : "+evaluation[1]);
+		textPane_7.setText(largesubject[1]);
 		textPane_7.setBounds(212, 0, 107, 40);
 		panel_3.add(textPane_7);
 		
 		JTextPane textPane_8 = new JTextPane();
-		textPane_8.setText(largesubject[1]);
+		textPane_8.setText(smallsubject[1]);
 		textPane_8.setBounds(322, 0, 99, 40);
 		panel_3.add(textPane_8);
 		
 		JTextPane textPane_9 = new JTextPane();
-		textPane_9.setText(smallsubject[0]);
+		textPane_9.setText(form[1]);
 		textPane_9.setBounds(425, 0, 70, 40);
 		panel_3.add(textPane_9);
 		
 		JTextPane textPane_10 = new JTextPane();
-		textPane_10.setText(form[1]);
+		textPane_10.setText(level[1]);
 		textPane_10.setBounds(499, 0, 59, 40);
 		panel_3.add(textPane_10);
 		
 		JTextPane textPane_11 = new JTextPane();
-		textPane_11.setText("level :"+level[0]);
+		textPane_11.setText(evaluation[1]);
 		textPane_11.setBounds(145, 0, 66, 40);
 		panel_3.add(textPane_11);
 		}
@@ -285,27 +285,27 @@ public class ProblemResult extends JFrame {
 		panel_4.add(textPane_12);
 		
 		JTextPane textPane_13 = new JTextPane();
-		textPane_13.setText("evaluation : "+evaluation[2]);
+		textPane_13.setText(largesubject[2]);
 		textPane_13.setBounds(212, 0, 107, 40);
 		panel_4.add(textPane_13);
 		
 		JTextPane textPane_14 = new JTextPane();
-		textPane_14.setText(largesubject[2]);
+		textPane_14.setText(smallsubject[2]);
 		textPane_14.setBounds(322, 0, 99, 40);
 		panel_4.add(textPane_14);
 		
 		JTextPane textPane_15 = new JTextPane();
-		textPane_15.setText(smallsubject[2]);
+		textPane_15.setText(form[2]);
 		textPane_15.setBounds(425, 0, 70, 40);
 		panel_4.add(textPane_15);
 		
 		JTextPane textPane_16 = new JTextPane();
-		textPane_16.setText(form[2]);
+		textPane_16.setText(level[2]);
 		textPane_16.setBounds(499, 0, 59, 40);
 		panel_4.add(textPane_16);
 		
 		JTextPane textPane_17 = new JTextPane();
-		textPane_17.setText("level :"+level[2]);
+		textPane_17.setText(evaluation[2]);
 		textPane_17.setBounds(145, 0, 66, 40);
 		panel_4.add(textPane_17);
 		}
@@ -332,27 +332,27 @@ public class ProblemResult extends JFrame {
 		panel_5.add(textPane_18);
 		
 		JTextPane textPane_19 = new JTextPane();
-		textPane_19.setText("evaluation : "+evaluation[3]);
+		textPane_19.setText(largesubject[3]);
 		textPane_19.setBounds(212, 0, 107, 40);
 		panel_5.add(textPane_19);
 		
 		JTextPane textPane_20 = new JTextPane();
-		textPane_20.setText(largesubject[3]);
+		textPane_20.setText(smallsubject[3]);
 		textPane_20.setBounds(322, 0, 99, 40);
 		panel_5.add(textPane_20);
 		
 		JTextPane textPane_21 = new JTextPane();
-		textPane_21.setText(smallsubject[3]);
+		textPane_21.setText(form[3]);
 		textPane_21.setBounds(425, 0, 70, 40);
 		panel_5.add(textPane_21);
 		
 		JTextPane textPane_22 = new JTextPane();
-		textPane_22.setText(form[3]);
+		textPane_22.setText(level[3]);
 		textPane_22.setBounds(499, 0, 59, 40);
 		panel_5.add(textPane_22);
 		
 		JTextPane textPane_23 = new JTextPane();
-		textPane_23.setText("level :"+level[3]);
+		textPane_23.setText(evaluation[3]);
 		textPane_23.setBounds(145, 0, 66, 40);
 		panel_5.add(textPane_23);
 		}
@@ -379,27 +379,27 @@ public class ProblemResult extends JFrame {
 		panel_6.add(textPane_24);
 		
 		JTextPane textPane_25 = new JTextPane();
-		textPane_25.setText("evaluation : "+evaluation[4]);
+		textPane_25.setText(largesubject[4]);
 		textPane_25.setBounds(212, 0, 107, 40);
 		panel_6.add(textPane_25);
 		
 		JTextPane textPane_26 = new JTextPane();
-		textPane_26.setText(largesubject[4]);
+		textPane_26.setText(smallsubject[4]);
 		textPane_26.setBounds(322, 0, 99, 40);
 		panel_6.add(textPane_26);
 		
 		JTextPane textPane_27 = new JTextPane();
-		textPane_27.setText(smallsubject[4]);
+		textPane_27.setText(form[4]);
 		textPane_27.setBounds(425, 0, 70, 40);
 		panel_6.add(textPane_27);
 		
 		JTextPane textPane_28 = new JTextPane();
-		textPane_28.setText("level :"+level[4]);
+		textPane_28.setText(level[4]);
 		textPane_28.setBounds(499, 0, 59, 40);
 		panel_6.add(textPane_28);
 		
 		JTextPane textPane_29 = new JTextPane();
-		textPane_29.setText(form[4]);
+		textPane_29.setText(evaluation[4]);
 		textPane_29.setBounds(145, 0, 66, 40);
 		panel_6.add(textPane_29);
 		}
@@ -426,27 +426,27 @@ public class ProblemResult extends JFrame {
 		panel_7.add(textPane_30);
 		
 		JTextPane textPane_31 = new JTextPane();
-		textPane_31.setText("evaluation : "+evaluation[5]);
+		textPane_31.setText(largesubject[5]);
 		textPane_31.setBounds(212, 0, 107, 40);
 		panel_7.add(textPane_31);
 		
 		JTextPane textPane_32 = new JTextPane();
-		textPane_32.setText(largesubject[5]);
+		textPane_32.setText(smallsubject[5]);
 		textPane_32.setBounds(322, 0, 99, 40);
 		panel_7.add(textPane_32);
 		
 		JTextPane textPane_33 = new JTextPane();
-		textPane_33.setText(smallsubject[5]);
+		textPane_33.setText(form[5]);
 		textPane_33.setBounds(425, 0, 70, 40);
 		panel_7.add(textPane_33);
 		
 		JTextPane textPane_34 = new JTextPane();
-		textPane_34.setText("level :"+level[5]);
+		textPane_34.setText(level[5]);
 		textPane_34.setBounds(499, 0, 59, 40);
 		panel_7.add(textPane_34);
 		
 		JTextPane textPane_35 = new JTextPane();
-		textPane_35.setText(form[5]);
+		textPane_35.setText(evaluation[5]);
 		textPane_35.setBounds(145, 0, 66, 40);
 		panel_7.add(textPane_35);
 		}
@@ -473,27 +473,27 @@ public class ProblemResult extends JFrame {
 		panel_8.add(textPane_36);
 		
 		JTextPane textPane_37 = new JTextPane();
-		textPane_37.setText("evaluation : "+evaluation[6]);
+		textPane_37.setText(largesubject[6]);
 		textPane_37.setBounds(212, 0, 107, 40);
 		panel_8.add(textPane_37);
 		
 		JTextPane textPane_38 = new JTextPane();
-		textPane_38.setText(largesubject[6]);
+		textPane_38.setText(smallsubject[6]);
 		textPane_38.setBounds(322, 0, 99, 40);
 		panel_8.add(textPane_38);
 		
 		JTextPane textPane_39 = new JTextPane();
-		textPane_39.setText(smallsubject[6]);
+		textPane_39.setText(form[6]);
 		textPane_39.setBounds(425, 0, 70, 40);
 		panel_8.add(textPane_39);
 		
 		JTextPane textPane_40 = new JTextPane();
-		textPane_40.setText("level :"+level[6]);
+		textPane_40.setText(level[6]);
 		textPane_40.setBounds(499, 0, 59, 40);
 		panel_8.add(textPane_40);
 		
 		JTextPane textPane_41 = new JTextPane();
-		textPane_41.setText(form[6]);
+		textPane_41.setText(evaluation[6]);
 		textPane_41.setBounds(145, 0, 66, 40);
 		panel_8.add(textPane_41);
 		}
