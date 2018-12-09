@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/home/Desktop/MachineLearninginJava_Code/MachineLearninginJava_Code/Code/MLJ-Chapter10/lib/mallet.jar"/>
+	<classpathentry kind="lib" path="C:/Users/home/Desktop/MachineLearninginJava_Code/MachineLearninginJava_Code/Code/MLJ-Chapter10/lib/mallet-deps.jar"/>
+	<classpathentry kind="lib" path="C:/Users/home/Desktop/전공/2-2/데이터베이스/수업자료/10주차/mysql-connector-java-5.1.25-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

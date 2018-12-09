@@ -1,6 +1,5 @@
 package network_termproject;
 
-
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -9,46 +8,49 @@ import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import java.net.Socket;
 
 import network_termproject.Mainframe;
 
 import javax.swing.JPasswordField;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.awt.event.ActionEvent;
 
 public class SignUp extends JFrame {
 
+	/*
+	 * gui of signup page and create dialoge according to server's respond
+	 */
    private JFrame frmSignup;
    private JTextField textField;
    private JTextField textField_1;
    private JPasswordField passwordField;
-
+   Socket socket;
+   PrintWriter out = null;
+   BufferedReader in=null;
    /**
     * Launch the application.
     */
-   /*
-   * 
-   public static void main(String[] args) {
-      EventQueue.invokeLater(new Runnable() {
-         public void run() {
-            try {
-               SignUp window = new SignUp();
-               window.frmSignup.setVisible(true);
-            } catch (Exception e) {
-               e.printStackTrace();
-            }
-         }
-      });
-   }
 
-    */
-   public SignUp() {
-      
+   public SignUp(Socket socket1) {
+	   socket=socket1;
+		  try {
+			  in = new BufferedReader(new InputStreamReader(
+			            socket.getInputStream()));
+		        out = new PrintWriter(socket.getOutputStream(), true);
+		   	} catch (IOException e1) {
+		   		// TODO Auto-generated catch block
+		   		e1.printStackTrace();
+		   	}
       setTitle("SignUp");
       setSize(430,110);
       setLocation(0,120);
-      setBounds(100, 100, 810, 628);
+      setBounds(100, 100, 520, 328);
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       getContentPane().setLayout(new CardLayout(0, 0));
       
@@ -75,45 +77,62 @@ public class SignUp extends JFrame {
       
       textField_1 = new JTextField();
       textField_1.setColumns(10);
-      textField_1.setBounds(201, 122, 116, 21);
+      textField_1.setBounds(201, 91, 116, 21);
       panel.add(textField_1);
       
       passwordField = new JPasswordField();
-      passwordField.setBounds(201, 91, 116, 21);
+      passwordField.setBounds(201, 122, 116, 21);
       panel.add(passwordField);
       
-      JButton confirm = new JButton("confirm");   //확인 버튼
+      JButton confirm = new JButton("확인");   //확인 버튼
       confirm.setBounds(103, 193, 97, 23);
       panel.add(confirm);   
       
       confirm.addActionListener(new ActionListener() {  //확인 버튼 누르면 성공 팝업창
          public void actionPerformed(ActionEvent e) {
-        	 /*
-        	  * 이 부분에 받은 아이디로 이미 있는아이디 인지 유무 판단
-        	  */
-         String id=textField_1.getText();
-         /*
-          * if(id=="이미있는아이디")
-          * JOptionPane.showMessageDialog(null,"ID alredy exists","Fail", 1);
-          */
+         String password=textField_1.getText();
+         String name=textField.getText();
+         String id=passwordField.getText();
+         String message="";
+         String input="";
+         message="msgjoin/"+id+"/"+name+"/"+password;
+         System.out.println(message);
+         out.println(message);
+         try {
+			input=in.readLine();
+			System.out.println(input);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+        if(input.contains("okay")) {
          JOptionPane.showMessageDialog(null,"회원가입 성공","Success", 1);
-         new Mainframe().setVisible(true);
          setVisible(false);
-         
+        }
+        else {
+        	JOptionPane.showMessageDialog(null,"중복된 아이디입니다","fail", 1);
+         setVisible(false);
+        }
          }
       });   
    
-      JButton cancel = new JButton("cancel");   //취소 버튼
-      
+      JButton cancel = new JButton("취소");   //취소 버튼      
       cancel.addActionListener(new ActionListener() {      //취소 버튼 누르면 메인 화면으로 
          public void actionPerformed(ActionEvent e) { 
-            new Mainframe().setVisible(true);
+           // new Mainframe().setVisible(true);
             setVisible(false);
          }
       });
       
       cancel.setBounds(256, 193, 97, 23);
       panel.add(cancel);
+      
+      JLabel Label = new JLabel();       
+      Label.setIcon(ImageClass.EvaluateWindow_background());
+      Label.setBounds(0,0,714,541);
+      panel.add(Label);
+      Label.setLayout(null);
+      
       setVisible(true);
    }
    
