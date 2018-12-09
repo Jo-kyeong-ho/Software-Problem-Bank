@@ -155,7 +155,7 @@ public class MiniGame extends JFrame {
 		contentPane.add(btnSubmit);
 		
 		JLabel lbl_1 = new JLabel();
-		lbl_1.setIcon(ImageClass.Minigame_background()); // 배경 이미지
+		lbl_1.setIcon(ImageClass.Minigame_background()); 
 		lbl_1.setBounds(0, 0, 794, 589);
 		contentPane.add(lbl_1);
 		lbl_1.setLayout(null);

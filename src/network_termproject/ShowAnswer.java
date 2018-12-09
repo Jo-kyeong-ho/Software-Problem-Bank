@@ -125,7 +125,7 @@ public class ShowAnswer extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel menu = new JLabel();
-		menu.setIcon(ImageClass.Menu_background()); // 배경 이미지
+		menu.setIcon(ImageClass.Menu_background()); 
 		menu.setBounds(0, 0, 128, 589);
 		contentPane.add(menu);
 		menu.setLayout(null);
@@ -201,12 +201,6 @@ public class ShowAnswer extends JFrame {
 		JButton btnSelect = new JButton("채택");
 		btnSelect.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-			/*
-				 질문자 id = user id 랑 같으면 보여줌,
-                             클릭시 서버로
-                 Msggoodanswer/질문id/답변자id
-                             보냄
-			*/
 				out.println("Msggoodanswer/"+question_id+"/"+answeruser_id);
 			}
 		});

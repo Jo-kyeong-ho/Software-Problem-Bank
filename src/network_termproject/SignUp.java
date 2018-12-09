@@ -84,11 +84,11 @@ public class SignUp extends JFrame {
       passwordField.setBounds(201, 122, 116, 21);
       panel.add(passwordField);
       
-      JButton confirm = new JButton("확인");   //확인 버튼
+      JButton confirm = new JButton("확인"); 
       confirm.setBounds(103, 193, 97, 23);
       panel.add(confirm);   
       
-      confirm.addActionListener(new ActionListener() {  //확인 버튼 누르면 성공 팝업창
+      confirm.addActionListener(new ActionListener() {  
          public void actionPerformed(ActionEvent e) {
          String password=textField_1.getText();
          String name=textField.getText();
@@ -116,10 +116,9 @@ public class SignUp extends JFrame {
          }
       });   
    
-      JButton cancel = new JButton("취소");   //취소 버튼      
-      cancel.addActionListener(new ActionListener() {      //취소 버튼 누르면 메인 화면으로 
+      JButton cancel = new JButton("취소");        
+      cancel.addActionListener(new ActionListener() {      
          public void actionPerformed(ActionEvent e) { 
-           // new Mainframe().setVisible(true);
             setVisible(false);
          }
       });

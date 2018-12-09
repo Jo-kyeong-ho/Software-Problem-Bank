@@ -99,7 +99,7 @@ public class WriteAnswer extends JFrame {
 		{
 			ImageIcon imgIcon=null;
 			imgIcon = new ImageIcon("temp1.jpg");
-			JLabel lblPicture = new JLabel(imgIcon);               //이미지 들어가는 창 (사이즈 포함 ) ***************************************
+			JLabel lblPicture = new JLabel(imgIcon);            
 			lblPicture.setBounds(302, 10, 315, 329);
 			contentPane.add(lblPicture);
 		}

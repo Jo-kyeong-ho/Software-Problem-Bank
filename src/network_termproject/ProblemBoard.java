@@ -68,13 +68,13 @@ public class ProblemBoard extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel menu = new JLabel();
-		menu.setIcon(ImageClass.Menu_background()); // 배경 이미지
+		menu.setIcon(ImageClass.Menu_background());
 		menu.setBounds(0, 0, 128, 589);
 		contentPane.add(menu);
 		menu.setLayout(null);
 		
 		JButton button = new JButton("My Page");
-		button.addActionListener(new ActionListener() {      //Mypage 버튼 누르면 mypage로 이동 
+		button.addActionListener(new ActionListener() {      
 			public void actionPerformed(ActionEvent e) {
 				out.println("msgmypage");
 	            setVisible(false);
@@ -84,12 +84,8 @@ public class ProblemBoard extends JFrame {
 		menu.add(button);
 		
 		JButton button_1 = new JButton("질문게시판");
-		button_1.addActionListener(new ActionListener() {    //질문게시판 버튼 누르면 Question board로 이동
+		button_1.addActionListener(new ActionListener() {   
 			public void actionPerformed(ActionEvent e) {
-				/*
-				 클릭시 server로
-				Msgquestionboard 보냄
-				*/
 				out.println("Msgquestionboard/1");
 	            setVisible(false);
 			}
@@ -98,7 +94,7 @@ public class ProblemBoard extends JFrame {
 		menu.add(button_1);
 		
 		JButton button_2 = new JButton("문제게시판");
-		button_2.addActionListener(new ActionListener() {    //문제게시판 버튼 누르면 Problem board로 이동
+		button_2.addActionListener(new ActionListener() {    
 			public void actionPerformed(ActionEvent e) {
 				out.println("problemwindow");
 	            setVisible(false);
@@ -123,12 +119,9 @@ public class ProblemBoard extends JFrame {
 				detail.setBounds(430, 262, 87, 21);
 				contentPane.add(detail);
 		
-				JButton btnSearch = new JButton("search");     // 검색 버튼 
-				/*
-				클릭하면 서버로
-				Msgproblemsearch/큰주제/작은주제/1 전송
-		        */
-				btnSearch.addActionListener(new ActionListener() {    //문제게시판 버튼 누르면 Problem board로 이동
+				JButton btnSearch = new JButton("search");   
+
+				btnSearch.addActionListener(new ActionListener() {   
 					public void actionPerformed(ActionEvent e) {
 						String a=Type.getName();
 						System.out.println(a);
@@ -144,12 +137,12 @@ public class ProblemBoard extends JFrame {
 				
 				JLabel panel  = new JLabel();
 				panel.setBackground(Color.WHITE);
-				panel.setIcon(ImageClass.background()); // 배경 이미지
-				panel.setBounds(121, 0, 673, 589); ///////////////////////////////////////////////////////////////////////////////////////////////////////
+				panel.setIcon(ImageClass.background()); 
+				panel.setBounds(121, 0, 673, 589); 
 				contentPane.add(panel);
 				panel.setLayout(null);
 				
-				detail.add("세부주제");                      // 문항 집어넣기
+				detail.add("세부주제");                     
 				detail.add("introduction");
 				detail.add("applicationlayer");
 				detail.add("transportlayer");
@@ -158,7 +151,7 @@ public class ProblemBoard extends JFrame {
 				detail.add("wireless");
 				detail.select(0);
 				
-				Type.add("큰주제");                         // 문항 집어넣기
+				Type.add("큰주제");                        
 				Type.add("os"); 
 				Type.add("network");
 				Type.add("algorithm");

@@ -78,7 +78,7 @@ public class ManageBoard extends JFrame {
 		txtManagerBoard.setFont(new Font("굴림", Font.BOLD, 18));
 		txtManagerBoard.setColumns(10);
 		
-		JLabel lblNewLabel = new JLabel("문제번호"); //****************************************************
+		JLabel lblNewLabel = new JLabel("문제번호");
 		lblNewLabel.setBounds(183, 97, 57, 15);
 		contentPane.add(lblNewLabel);
 		
@@ -88,7 +88,7 @@ public class ManageBoard extends JFrame {
 		
 		JLabel lblId = new JLabel("사용자 ID");
 		lblId.setBounds(462, 97, 57, 15);
-		contentPane.add(lblId);                     // ****************************************************
+		contentPane.add(lblId);                    
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBounds(108, 117, 552, 382);
@@ -327,7 +327,7 @@ public class ManageBoard extends JFrame {
 		panel_7.add(textPane_17);
 		}
 		JLabel lbl = new JLabel();
-		lbl.setIcon(ImageClass.Manage_background()); // 배경 이미지
+		lbl.setIcon(ImageClass.Manage_background()); 
 		lbl.setBounds(0, 0, 794, 589);
 		contentPane.add(lbl);
 		lbl.setLayout(null);

@@ -51,10 +51,9 @@ public class EditIntroduce extends JFrame {
 		contentPane.setLayout(null);
 		
 		textIntroduce = new JTextPane();
-		textIntroduce.setText("소개글을 입력하세요");    //안에 소개글.txt내용넣고 변경가능하게 설정
+		textIntroduce.setText("소개글을 입력하세요");   
 		textIntroduce.setBounds(59, 24, 745, 453);
 		contentPane.add(textIntroduce);
-		//textIntroduce.setColumns(10);
 		
 		JButton btnConfirm = new JButton("확인");
 		btnConfirm.setBounds(493, 524, 120, 41);
@@ -79,17 +78,13 @@ public class EditIntroduce extends JFrame {
 					out.println(token2.nextToken());
 				}
 				out.println("msgmypage");
-		        /*
-		 		서버로
-				Msgchangeintroduce/id/소개글내용 전송
-		        */
 				setVisible(false);
 	        }
 		});
 		contentPane.add(btnConfirm);
 		
 		JButton btnCancel = new JButton("취소");
-		btnCancel.addActionListener(new ActionListener() {   // 취소 버튼 누르면 다시 mypage창으로 
+		btnCancel.addActionListener(new ActionListener() {   
 			public void actionPerformed(ActionEvent e) {
 				out.println("msgmypage");
 				setVisible(false);
@@ -99,7 +94,7 @@ public class EditIntroduce extends JFrame {
 		contentPane.add(btnCancel);
 		
 		JLabel lbl = new JLabel("");
-		lbl.setIcon(ImageClass.Introduce_background()); // 배경 이미지
+		lbl.setIcon(ImageClass.Introduce_background()); 
 		lbl.setBounds(0, 0, 863, 639);
 		contentPane.add(lbl);
 		lbl.setLayout(null);

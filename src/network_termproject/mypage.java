@@ -244,7 +244,6 @@ public class mypage extends JFrame {
 			public void actionPerformed(ActionEvent e) {    
 				new EditIntroduce(socket,id);
 				setVisible(false);
-				//frame.setVisible(false); 
 			}
 		});
 		btnUpdate.setBounds(118, 135, 71, 23);

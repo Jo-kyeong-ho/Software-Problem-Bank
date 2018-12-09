@@ -30,79 +30,79 @@ private static ImageIcon grade3_background = new ImageIcon("grade3.png");
 private static ImageIcon grade4_background = new ImageIcon("grade4.png");
 
 
-public static ImageIcon Menu_background() {   // 메뉴 배경이미지  (128, 589)
+public static ImageIcon Menu_background() {   
 	return menu_background;
 }
 
-public static ImageIcon background() { // 기본 배경이미지 (673, 589)
+public static ImageIcon background() {
 	return background;
 }
 
-public static ImageIcon Category_background() { // 카테고리 이미지 (794, 589)
+public static ImageIcon Category_background() { 
 	return category_background;
 }
 
-public static ImageIcon Detect_background() { // 신고게시판 이미지 (794, 589)
+public static ImageIcon Detect_background() { 
 	return detect_background;
 }
 
-public static ImageIcon Introduce_background() { // 소개글 수정 이미지 (863, 639)
+public static ImageIcon Introduce_background() { 
 	return introduce_background;
 }
 
-public static ImageIcon EvaluateWindow_background() { // 평가창 이미지  (794, 589)
+public static ImageIcon EvaluateWindow_background() { 
 	return evaluateWindow_background;
 }
 
-public static ImageIcon Manage_background() {     // 매니저보드 이미지 (794, 589)
+public static ImageIcon Manage_background() {    
 	return manage_background;
 }
 
-public static ImageIcon Minigame_background() {     // 미니게임 이미지 (794, 589)
+public static ImageIcon Minigame_background() {    
 	return mini_background;
 }
 
-public static ImageIcon Problemupload_background() {   // 문제 업로드 이미지 (794, 589)
+public static ImageIcon Problemupload_background() {   
 	return problemupload_background;
 }
 
-public static ImageIcon Questionupload_background() {   // 질문 업로드 이미지 (794, 589)
+public static ImageIcon Questionupload_background() {   
 	return questionupload_background;
 }
 
-public static ImageIcon Showanswer_background() { // 정답 보기 이미지 (673, 589)
+public static ImageIcon Showanswer_background() { 
 	return showanswer_background;
 }
 
-public static ImageIcon Writeanswer_background() { // 정답 쓰기 이미지  (673, 589)
+public static ImageIcon Writeanswer_background() { 
 	return writeanswer_background;
 }
 
-public static ImageIcon Mainframe_background() { //  로그인창 이미지  (714, 541)
+public static ImageIcon Mainframe_background() { 
 	return mainframe_background;
 }
 
-public static ImageIcon Signup_background() { //  회원가입창 이미지  (520, 328)
+public static ImageIcon Signup_background() { 
 	return signup_background;
 }
 
-public static ImageIcon MainImage_background() { //  회원가입창 이미지  (243, 180)
+public static ImageIcon MainImage_background() { 
 	return Image_background;
 }
 
-public static ImageIcon Grade1_background() { //  rank1 이미지  (189,180)
+public static ImageIcon Grade1_background() { 
 	return grade1_background;
 }
 
-public static ImageIcon Grade2_background() { //  rank2 이미지  (189,180)
+public static ImageIcon Grade2_background() { 
 	return grade2_background;
 }
 
-public static ImageIcon Grade3_background() { //  rank3 이미지  (189,180)
+public static ImageIcon Grade3_background() { 
 	return grade3_background;
 }
 
-public static ImageIcon Grade4_background() { //  rank4 이미지  (189,180)
+public static ImageIcon Grade4_background() { 
 	return grade4_background;
 }
 

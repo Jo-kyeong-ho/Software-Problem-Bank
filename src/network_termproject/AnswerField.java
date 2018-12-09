@@ -159,11 +159,6 @@ public class AnswerField extends JFrame {
 		JButton btnSelect = new JButton("go");
 		btnSelect.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-			 /*
-				클릭하면 서버로
-                Msggetanswer/질문아이디/답변자아이디
-                            보냄
-			 */
 				out.println("Msggetanswer/"+question_id[0]+"/"+answerperson_id[0]);
 				setVisible(false);
 			}

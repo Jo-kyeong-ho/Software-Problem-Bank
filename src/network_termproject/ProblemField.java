@@ -196,7 +196,7 @@ public class ProblemField extends JFrame {
 		btnNewButton.setBounds(242, 521, 144, 39);
 		contentPane.add(btnNewButton);
 		
-		JLabel lblNewLabel = new JLabel("질문자 / 문제 유형");  //*****************************************************************
+		JLabel lblNewLabel = new JLabel("질문자 / 문제 유형");  
 		lblNewLabel.setBounds(167, 21, 144, 31);
 		contentPane.add(lblNewLabel);
 		
@@ -204,7 +204,7 @@ public class ProblemField extends JFrame {
 		label.setBounds(196, 67, 144, 31);
 		contentPane.add(label);
 		btnNewButton.setBounds(241, 509, 144, 39);
-		contentPane.add(btnNewButton);                    //*****************************************************************
+		contentPane.add(btnNewButton);                   
 		
 		
 		JButton btnShowAnswer = new JButton("정답쓰기");

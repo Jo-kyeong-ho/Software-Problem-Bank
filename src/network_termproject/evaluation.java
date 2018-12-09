@@ -58,16 +58,6 @@ public class evaluation extends JFrame {
 	 */
 
 	public evaluation(Socket socket1,String line) {
-		/*
-		     서버에서
-           Msgproblem/문제이름/업로더 id/평점/난이도/형식
-                   받음
-               ->문제.txt받음
-               ->정답.txt받음
-               ->그림.jpg받음
-               
-              evaluation->contentpane
-        */
 		setIconImage(Toolkit.getDefaultToolkit().getImage("aa.png"));
 		socket=socket1;		
 		input=line;
@@ -240,7 +230,7 @@ public class evaluation extends JFrame {
 		
 		JButton btnEvaluate = new JButton("평가하기");
 		btnEvaluate.addActionListener(new ActionListener() {   
-			public void actionPerformed(ActionEvent e) {       // 평가하기 클릭시 evaluateWindow 띄어줌
+			public void actionPerformed(ActionEvent e) {       
 				new evaluateWindow(socket,problem_id,problem_name);
 			}
 		});
@@ -248,13 +238,13 @@ public class evaluation extends JFrame {
 		contentPane.add(btnEvaluate);
 		
 
-		JLabel lblNewLabel = new JLabel("문제 이름");   //***********************************************
+		JLabel lblNewLabel = new JLabel("문제 이름");   
 		lblNewLabel.setBounds(195, 41, 57, 15);
 		contentPane.add(lblNewLabel);
 		
 		JLabel label_1 = new JLabel("출제자 이름");
 		label_1.setBounds(195, 104, 80, 15);
-		contentPane.add(label_1);                     //***********************************************
+		contentPane.add(label_1);                     
 		
 		JButton btDetect = new JButton("신고하기");
 		btDetect.addActionListener(new ActionListener() {
@@ -299,7 +289,7 @@ public class evaluation extends JFrame {
 		
 		JLabel panal = new JLabel();
 		panal.setBackground(Color.WHITE);
-		panal.setIcon(ImageClass.background()); // 배경 이미지
+		panal.setIcon(ImageClass.background()); 
 		panal.setBounds(121, 0, 673, 589);
 		contentPane.add(panal);
 		panel.setLayout(null);

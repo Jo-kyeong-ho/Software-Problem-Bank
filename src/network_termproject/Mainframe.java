@@ -77,7 +77,7 @@ public class Mainframe extends JFrame {
       
       
       JLabel MainImage = new JLabel();
-      MainImage.setIcon(ImageClass.MainImage_background());// 메인이미지
+      MainImage.setIcon(ImageClass.MainImage_background());
       MainImage.setBounds(53,32,235,173);
       Mainwindow.add(MainImage);
      
@@ -103,11 +103,11 @@ public class Mainframe extends JFrame {
         lblNewLabel.setBounds(238, 438, 116, 15);
         Mainwindow.add(lblNewLabel);
         
-        JButton LoginBT = new JButton("LogIn");        //로그인 버튼
+        JButton LoginBT = new JButton("LogIn");        
         LoginBT.setBounds(275, 351, 97, 23);
         Mainwindow.add(LoginBT);
         
-        LoginBT.addActionListener(new ActionListener() {         //로그인 액션
+        LoginBT.addActionListener(new ActionListener() {         
             public void actionPerformed(ActionEvent e) {
             	String id;
             	char[] get_password;
@@ -140,19 +140,19 @@ public class Mainframe extends JFrame {
             }
          });
         
-        JButton CancelBT = new JButton("취소");      //취소 버튼 
+        JButton CancelBT = new JButton("취소");       
         CancelBT.setBounds(412, 351, 97, 23); 
         Mainwindow.add(CancelBT);
         
-        CancelBT.addActionListener(new ActionListener() {         //취소 버튼 누르면 닫힘 
+        CancelBT.addActionListener(new ActionListener() {         
            public void actionPerformed(ActionEvent e) {
            System.exit(0);
            }
         });
         
-      JButton SignupBT = new JButton("회원가입");       //회원가입 버튼   
+      JButton SignupBT = new JButton("회원가입");    
       
-      SignupBT.addActionListener(new ActionListener() {         // 회원가입 버튼 누르면 회원가입 창으로 
+      SignupBT.addActionListener(new ActionListener() {        
          public void actionPerformed(ActionEvent e) {
         	new SignUp(socket);
          }
